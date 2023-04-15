@@ -1,4 +1,4 @@
-package models;
+package com.example.lista_de_alunos.models;
 
 import java.io.Serializable;
 

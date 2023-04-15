@@ -6,19 +6,19 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/autodraw"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lista_de_alunos"
         tools:targetApi="31">
         <activity
-            android:name=".AlunoCreateActivity"
+            android:name=".views.AlunoCreateActivity"
             android:exported="false" />
         <activity
-            android:name=".AlunoDetailsActivity"
+            android:name=".views.AlunoDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".views.AlunoListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

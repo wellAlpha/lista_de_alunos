@@ -1,8 +1,10 @@
-package com.example.lista_de_alunos;
+package com.example.lista_de_alunos.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.lista_de_alunos.R;
 
 public class AlunoCreateActivity extends AppCompatActivity {
 

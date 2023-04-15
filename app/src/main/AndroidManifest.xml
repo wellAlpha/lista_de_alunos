@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Lista_de_alunos"
         tools:targetApi="31">
         <activity
+            android:name=".AlunoCreateActivity"
+            android:exported="false" />
+        <activity
             android:name=".AlunoDetailsActivity"
             android:exported="false" />
         <activity

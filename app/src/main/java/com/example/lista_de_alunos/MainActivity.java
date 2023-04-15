@@ -10,6 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,8 +19,8 @@ import models.Aluno;
 
 public class MainActivity extends AppCompatActivity {
     private ListView listView;
+    private FloatingActionButton floatBtn;
     private List<Aluno> items = new ArrayList<>();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         items.add(new Aluno("Pedro", "Silva", "789", "03/03/1992", "Análise e Desenvolvimento de Sistemas", 2021));
 
         listView = findViewById(R.id.list);
+        floatBtn = findViewById(R.id.floatingActionButton);
 
         ArrayAdapter<Aluno> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
 
@@ -46,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
                 startActivity(intent);
                 // Toast.makeText(MainActivity.this, "Item selecionado: " + selectedItem, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        floatBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AlunoCreateActivity.class);
+
+                startActivity(intent);
             }
         });
     }

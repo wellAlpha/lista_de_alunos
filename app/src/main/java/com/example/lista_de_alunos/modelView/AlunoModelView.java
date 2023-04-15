@@ -28,6 +28,7 @@ public class AlunoModelView extends ViewModel {
         }
 
         listaAlunos.add(novoAluno);
+
         alunosLiveData.setValue(listaAlunos);
     }
 

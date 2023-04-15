@@ -16,6 +16,9 @@ public class AlunoDetailsActivity extends AppCompatActivity {
     TextView curso;
     TextView ano;
 
+    /**
+     * TODO: Adicionar botão de delete e talvez tornar campos alteraveis.
+     * */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

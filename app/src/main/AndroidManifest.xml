@@ -12,13 +12,13 @@
         android:theme="@style/Theme.Lista_de_alunos"
         tools:targetApi="31">
         <activity
-            android:name=".views.AlunoCreateActivity"
+            android:name=".view.AlunoCreateActivity"
             android:exported="false" />
         <activity
-            android:name=".views.AlunoDetailsActivity"
+            android:name=".view.AlunoDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".views.AlunoListActivity"
+            android:name=".view.AlunoListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

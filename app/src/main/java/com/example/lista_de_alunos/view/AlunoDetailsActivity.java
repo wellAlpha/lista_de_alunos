@@ -1,4 +1,4 @@
-package com.example.lista_de_alunos.views;
+package com.example.lista_de_alunos.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.lista_de_alunos.R;
-import com.example.lista_de_alunos.models.Aluno;
+import com.example.lista_de_alunos.model.Aluno;
 
 public class AlunoDetailsActivity extends AppCompatActivity {
 

@@ -1,20 +1,17 @@
-package com.example.lista_de_alunos.models;
+package com.example.lista_de_alunos.model;
 
 import java.io.Serializable;
 
 public class Aluno implements Serializable {
     private String nome;
-
     private String sobrenome;
     private String matricula;
-    private String dataNascimento;
     private String curso;
     private Integer ano;
-    public Aluno(String nome, String sobrenome, String matricula, String dataNascimento, String curso, Integer ano) {
+    public Aluno(String nome, String sobrenome, String matricula, String curso, Integer ano) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.matricula = matricula;
-        this.dataNascimento = dataNascimento;
         this.curso = curso;
         this.ano = ano;
     }
@@ -27,9 +24,6 @@ public class Aluno implements Serializable {
     }
     public String getMatricula() {
         return matricula;
-    }
-    public String getDataNascimento() {
-        return dataNascimento;
     }
     public String getCurso() { return curso; }
     public Integer getAno() { return ano; }
